@@ -1,0 +1,80 @@
+@import url(./atheme/liano.css);
+@import url(./atheme/darkcode.css);
+:root {
+    --select-text-bg-color: #000;/* 文本选中背景色（粉红）*/
+    --bg-color: rgb(41, 57, 55);
+    --write-color: rgba(255, 255, 255, 0);    /* 书写区背景色 */
+    --sidebarbg-color: rgb(41, 57, 55);;/* 侧边栏背景色 */
+    --focus-color: #ff5d52;/* 点击某些元素（如标题）显示的颜色（偏红） */
+    --codeblockbg-color: rgba(250, 250, 250, 0);/* 代码块背景色（灰色） */
+    --codeblockfont-color: #f7f7f7;/* 代码块默认字体颜色（黑色） */
+    --h2-color: #FFAE42;
+    --h3-color: #6699CC;
+    --h4-color: #45B08C;
+    --h5-color: #c58558;/* 各级标题点缀颜色（绿色） */
+    --codeblocknum-color: rgba(128, 128, 255, 0.8);/* 代码块行编号颜色（蓝色） */
+    --blockquoteicon-color: rgba(0, 196, 182, 0.8); /* blockquote提示图标色（绿色） */
+    --blockquotebg-color: rgba(255, 255, 255, 0);/* blockquote背景色（淡绿） */
+    --ulol-color: #81accf;/* 有序无序列表前缀颜色（灰色） */
+    --olfore-color: #fff;/* 有序列表字体颜色（白色） */
+    --tableevenrow-color: rgba(255, 255, 255, 0.1);/* 表格偶数行颜色（淡灰） */
+    --tableborder-color: #c5c5c5;/* 表格边框色（黑色） */
+    --tablethbg-color: rgba(199, 237, 204, 0.2);/* 表格表头背景色（淡绿） */
+    --scrollbar-color: #9e9e9e;/* 滚动条颜色（灰色） */
+    --toc-color: #6699CC;/* 目录颜色（绿色） */
+    --atext-color: #6699CC;/* 超链接文本颜色 */
+    --code-color: #c58558;/* 行内代码前景色（红色） */
+    --codebg-color: rgba(247, 247, 248, 0.1);/* 行内代码背景色（灰色） */
+    --highlight-color: red;/* 高亮文本前景色（红色） */
+    --highlightbg-color: yellow; /* 高亮文本背景色（黄色） */
+    --split-color: #000;/* 分割线颜色（绿色） */
+    --body-color: #f7f7f7;/* 文本颜色（黑色） */
+    --para-color: #f7f7f7;/* 段落文本颜色（黑色） */
+    --sidelist-selected-color: #000;/* 侧边栏条目选中背景色（灰色） */
+    --yamlbg-color: #000;/* 头部YAML背景色（白色） */
+    --yaml-color: #fff;/* 头部YAML字体颜色（黑色） */
+    --body-font: '思源宋体';/* 字体 */
+    --code-font: 'Consolas', '思源宋体', monospace;/* 代码块以及行内代码字体 */
+    --print-font: '思源宋体';/* 打印字体 */
+    --text-color: #aaa;
+    --active-file-bg-color: #000;
+}
+#write {
+    box-shadow: none;
+}
+blockquote {
+    color: #f6f6f6;
+    border: 1px solid #f7f7f7;
+}
+blockquote:hover,
+.md-fences:hover,
+img:hover,
+table tr:hover,
+#write code:hover {
+    box-shadow: none;
+}
+blockquote:hover {
+    border: 1px solid #f7f7f7;
+}
+.md-rawblock-control, 
+.md-rawblock-container:hover,
+mjx-container:hover {
+  background: rgba(255, 255, 255, 0) !important;
+}
+.outline-content {
+    border-radius: 0;
+    box-shadow: none;
+}
+@media print {
+    html,
+    #write {
+        font-size: 16px !important;
+    }
+}
+mjx-container {
+    color: var(--h5-color);
+    font-size: 90% !important;
+}
+strong {
+    color: rgb(209, 80, 108);
+}
