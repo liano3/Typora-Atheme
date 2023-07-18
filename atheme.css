@@ -86,8 +86,10 @@ body {
     white-space: pre-line;
     border-bottom: none;
     color: var(--toc-color);
+    text-decoration: none;
 }
 .md-toc {
+    text-decoration: none;
     margin-top: 40px;
     padding-bottom: 20px;
 }
@@ -296,6 +298,7 @@ blockquote {
     border-radius: 5px;
     position: relative;
     transition: 1s;
+    line-height: 1.0;
 }
 blockquote::before {
     content: '\e60c';
@@ -375,8 +378,7 @@ table tr:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .cm-s-inner.CodeMirror {
-    margin: 0px;
-    padding: 6px;
+    padding: 3px;
     font-family: var(--code-font);
     font-size: 0.9rem;
     font-weight: 500;
