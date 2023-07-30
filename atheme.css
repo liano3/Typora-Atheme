@@ -60,7 +60,7 @@ body {
     margin: 60px auto;
     padding: min(6%, 80px);
     border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 12px;
 }
 #write p {
     line-height: 1.6rem;
@@ -72,7 +72,7 @@ body {
 }
 #write a {
     padding: 0 4px;
-    transition: 1s;
+    transition: 0.5s;
     color: var(--atext-color);
     text-decoration: underline;
 }
@@ -292,25 +292,26 @@ ol:last-child {
 }
 blockquote {
     border-left: 2px solid var(--blockquoteicon-color);
-    padding: 4px 15px;
+    padding: 0 15px;
     color: #666666;
     background-color: var(--blockquotebg-color);
     border-radius: 5px;
     position: relative;
-    transition: 1s;
-    line-height: 1.0;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 12px;
 }
 blockquote::before {
     content: '\e60c';
     font-family: "iconfont";
     color: var(--blockquoteicon-color);
     position: top;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 blockquote:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-left: 3px solid var(--focus-color);
+    transform: translateX(-8px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 12px;
+    border-left: 2px solid var(--focus-color);
 }
 blockquote:hover:before {
     color: var(--focus-color);
@@ -360,7 +361,8 @@ table tr:hover {
     padding-top: 30px;
     background-color: var(--codehead-color);
     border-radius: 10px;
-    transition: 1s;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 12px;
 }
 .md-fences::before {
     position: absolute;
@@ -375,7 +377,8 @@ table tr:hover {
                 50px 0px rgb(53, 205, 75);
 }
 .md-fences:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(-8px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px;
 }
 .cm-s-inner.CodeMirror {
     padding: 3px;
@@ -434,10 +437,10 @@ table tr:hover {
     font-size: 0.9rem;
     color: var(--code-color);
     background-color: var(--codebg-color);
-    transition: 1s;
+    transition: 0.5s;
 }
 #write code:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 12px;
 }
 hr {
     width: 80%;
@@ -467,9 +470,13 @@ hr {
 }
 img {
     border: none !important;
-    border-radius: 5%;
-    transition: 1s;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 1.2rem;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 12px;
+}
+img:hover {
+    transform: scale(1.02, 1.02);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px;
 }
 .md-tag {
     color: inherit;
@@ -483,7 +490,7 @@ img {
 .outline-content {
     background-color: var(--sidebarbg-color);
     border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 12px;
 }
 .outline-item {
     font-size: 16px;
