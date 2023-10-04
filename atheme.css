@@ -166,7 +166,7 @@ h2::before {
     margin-left: -28px;
 }
 h2:hover::before {
-    animation: avatar_turn_around 3s linear infinite;
+    animation: avatar_turn_around 0.5s linear infinite;
 }
 @keyframes avatar_turn_around {
     from {
@@ -199,6 +199,10 @@ h3::before {
     border-bottom: 8px solid #4396c5;
     border-left: 8px solid transparent;
     top: -8px;
+}
+h3 span:hover {
+    padding-left: 15px;
+    transition: 0.5s;
 }
 h4 {
     margin-top: 0.8rem;
