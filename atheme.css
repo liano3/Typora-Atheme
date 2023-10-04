@@ -70,8 +70,8 @@ body {
 #write>ol:first-child {
     margin-top: 30px;
 }
-#write a:not(a.md-toc-inner) {
-    padding: 0.1rem 1.2rem;
+#write a:not(.md-toc-inner) {
+    padding: 0.2rem 1.2rem;
     box-shadow: black 0 2px 3px;
     border-radius: 0.5rem;
     background-color: #ffc83d;
@@ -81,23 +81,20 @@ body {
     transition: all 0.9s ease-in-out;
     text-decoration: none;
 }
-#write a:not(a.md-toc-inner):hover {
+#write a:not(.md-toc-inner):hover {
     background-color: #f03a17;
     color: white;
 }
-#write a:not(a.md-toc-inner)::before {
+#write a:not(.md-toc-inner)::before {
     content: '😍';
     position: absolute;
-    left: -0rem;
-    top: 0;
-    opacity: 1;
+    left: 0;
     transition: all 0.9s ease-in-out;
     transform: rotate(0deg);
 }
-#write a:not(a.md-toc-inner):hover::before {
+#write a:not(.md-toc-inner):hover::before {
     content: '😘';
     left: 100%;
-    visibility: visible;
     transform: rotate(40deg);
     transition: all 0.9s ease-in-out;
     animation: rightRun 1.5s forwards;
@@ -511,14 +508,13 @@ img:hover {
 #write .ol>.li::before {
     margin-top: 5px;
     margin-left: -25px;
-    width: 1.65rem;
-    height: 1.65rem;
+    width: 1.2rem;
+    height: 1.2rem;
     border-radius: 0.825rem;
     content: counter(li);
     counter-increment: li;
     text-align: center;
-    font-size: .60rem;
-    line-height: 1.60rem;
+    font-size: 0.8rem;
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
@@ -538,5 +534,11 @@ img:hover {
         box-shadow: none !important;
         margin: 0 !important;
         padding: 0 !important;
+    }
+    #write a:not(.md-toc-inner) {
+        box-shadow: none;
+    }
+    #write a:not(.md-toc-inner)::before {
+        content: none;
     }
 }
