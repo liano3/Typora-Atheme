@@ -70,37 +70,46 @@ body {
 #write>ol:first-child {
     margin-top: 30px;
 }
-#write a {
-    padding: 0 4px;
-    transition: 0.5s;
-    color: var(--atext-color);
-    text-decoration: underline;
-}
-#write a:hover {
-    border-radius: 6px;
-    background-color: var(--abottom-color);
-    cursor: pointer;
-}
-#write a.md-toc-inner {
-    line-height: 1.6;
-    white-space: pre-line;
-    border-bottom: none;
-    color: var(--toc-color);
+#write a:not(a.md-toc-inner) {
+    padding: 0.1rem 1.2rem;
+    box-shadow: black 0 2px 3px;
+    border-radius: 0.5rem;
+    background-color: #ffc83d;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.9s ease-in-out;
     text-decoration: none;
+}
+#write a:not(a.md-toc-inner):hover {
+    background-color: #f03a17;
+    color: white;
+}
+#write a:not(a.md-toc-inner)::before {
+    content: '😍';
+    position: absolute;
+    left: -0rem;
+    top: 0;
+    opacity: 1;
+    transition: all 0.9s ease-in-out;
+    transform: rotate(0deg);
+}
+#write a:not(a.md-toc-inner):hover::before {
+    content: '😘';
+    left: 100%;
+    visibility: visible;
+    transform: rotate(40deg);
+    transition: all 0.9s ease-in-out;
+    animation: rightRun 1.5s forwards;
+}
+@keyframes rightRun {
+    100% {
+        transform: translateX(0)
+    }
 }
 .md-toc {
-    text-decoration: none;
     margin-top: 40px;
     padding-bottom: 20px;
-}
-#write a.md-toc-inner:hover {
-    text-decoration: underline;
-    color: var(--toc-color) !important;
-    background-color: inherit;
-    border-radius: 0px;
-}
-#write a.md-toc-inner:hover::before {
-    content: none !important;
 }
 h1,
 h2,
@@ -206,6 +215,7 @@ h4 {
     border-radius: 4px;
 }
 h5 {
+    margin-top: 0.6rem;
     color: var(--h5-color);
     padding: 2px 8px;
     font-size: 1.1rem;
@@ -213,6 +223,7 @@ h5 {
     border-radius: 2px;
 }
 h6 {
+    margin-top: 0.5rem;
     font-size: 1.1rem;
 }
 p,
