@@ -45,7 +45,7 @@
     --code-font: 'JetBrains Mono', 'Noto Sans SC';
 }
 html {
-    font-size: 17px;
+    font-size: 16px;
     -webkit-font-smoothing: antialiased;
 }
 body {
@@ -76,7 +76,7 @@ body {
     border-radius: 0.5rem;
     background-color: #ffc83d;
     color: black;
-    font-weight: bold;
+    font-weight: 500;
     position: relative;
     transition: all 0.9s ease-in-out;
     text-decoration: none;
@@ -255,14 +255,16 @@ ol:last-child {
     margin-bottom: 0;
 }
 blockquote {
-    border-left: 2px solid var(--blockquoteicon-color);
-    padding: 0 15px;
+    border: 2px solid var(--blockquoteicon-color);
+    padding: 0 15px 10px;
     color: #666666;
     background-color: var(--blockquotebg-color);
     border-radius: 5px;
     position: relative;
     transition: 0.5s;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 12px;
+}
+blockquote p {
+    line-height: 1.2rem !important;
 }
 blockquote::before {
     content: '\e60c';
@@ -274,8 +276,8 @@ blockquote::before {
 }
 blockquote:hover {
     transform: translateX(-8px);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 12px;
-    border-left: 2px solid var(--focus-color);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 12px;
+    border: 2px solid var(--focus-color);
 }
 blockquote:hover::before {
     color: var(--focus-color);
@@ -326,7 +328,6 @@ table tr:hover {
     background-color: var(--codehead-color);
     border-radius: 10px;
     transition: 0.5s;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 12px;
 }
 .md-fences::before {
     position: absolute;
@@ -342,7 +343,7 @@ table tr:hover {
 }
 .md-fences:hover {
     transform: translateY(-8px);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 12px;
 }
 .cm-s-inner.CodeMirror {
     padding: 3px;
@@ -436,11 +437,9 @@ img {
     border: none !important;
     border-radius: 1.2rem;
     transition: 0.5s;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 12px;
 }
 img:hover {
-    transform: scale(1.02, 1.02);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 12px;
 }
 .md-tag {
     color: inherit;
@@ -544,5 +543,10 @@ img:hover {
     }
     #write a:not(.md-toc-inner)::before {
         content: none;
+    }
+    img,
+    .md-fences,
+    blockquote {
+        box-shadow: none;
     }
 }
