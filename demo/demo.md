@@ -100,7 +100,7 @@ int main() {
 
 图片
 
-<img src="./assets/image-20231004111305134.png" alt="image-20231004111305134" style="zoom:67%;" />
+<img src="./assets/image-20231004111305134.png" alt="ok"  />
 
 公式
 $$

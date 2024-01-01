@@ -441,6 +441,18 @@ img {
 img:hover {
     transform: scale(1.1);
 }
+#write{
+    counter-reset: imgNum;
+}
+#write p>.md-image::after{
+    counter-increment: imgNum;
+    content: "fig " counter(imgNum);
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin-top: 8px !important;
+    font-family: var(--code-font);
+}
 .md-tag {
     color: inherit;
 }
