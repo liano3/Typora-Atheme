@@ -4,7 +4,7 @@
 
 ## 效果预览
 
-![image-20240101182341625](./assets/image-20240101182341625.png)
+<img src="./assets/image-20240101182341625.png" alt="image-20240101182341625" style="zoom:67%;" />
 
 ![image-20240101182349046](./assets/image-20240101182349046.png)
 

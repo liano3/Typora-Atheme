@@ -269,7 +269,9 @@ blockquote::before {
     content: '\e60c';
     display: block;
     padding-left: 15px;
+    padding-bottom: 4px;
     font-family: "iconfont";
+    font-size: 1.2rem;
     color: var(--blockquoteicon-color);
     background-color: rgb(204, 229, 204);
     border-top-left-radius: 10px;
@@ -441,17 +443,18 @@ img {
 img:hover {
     transform: scale(1.1);
 }
-#write{
+#write {
     counter-reset: imgNum;
 }
-#write p>.md-image::after{
+.md-image::after {
     counter-increment: imgNum;
-    content: "fig " counter(imgNum);
+    content: "Fig." counter(imgNum);
     text-align: center;
     width: 100%;
     display: inline-block;
     margin-top: 8px !important;
     font-family: var(--code-font);
+    font-size: small;
 }
 .md-tag {
     color: inherit;
