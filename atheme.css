@@ -45,6 +45,10 @@
     --ulol-color: #81accf;
     /* 列表文字颜色 */
     --olfore-color: #fff;
+    /* 任务列表背景色 */
+    --task-color: rgb(239, 112, 96);
+    /* 任务列表完成后背景色 */
+    --taskdone-color: #45B08C;
     /* 表格偶数行背景色 */
     --tableevenrow-color: rgb(245, 245, 245);
     /* 表格鼠标悬停行背景色 */
@@ -524,41 +528,27 @@ img:hover {
 .md-lang {
     color: #b4654d;
 }
-.md-task-list-item>input {
-    margin-left: -1.3em;
-    margin-top: 0.4rem;
+#write input[type=checkbox] {
+    width: 0;
 }
-.md-task-list-item>input:before {
-    content: '';
+.task-list-item input::before {
+    content: "";
     display: inline-block;
-    width: 0.875rem;
-    height: 0.875rem;
+    width: 1.0125rem;
+    height: 1.0125rem;
     vertical-align: middle;
     text-align: center;
-    font-size: 0.8rem;
-    color: white;
-    border-radius: 2px;
-    border: 1px solid var(--taskborder-color);
-    margin-top: -0.4rem;
-    transition: all 0.2s linear;
+    border-radius: 1.2rem;
+    background-color: var(--task-color);
 }
-.md-task-list-item>input:checked:before,
-.md-task-list-item>input[checked]:before {
-    content: '\2714';
-    font-size: 0.625rem;
-    color: white;
-    border: 1px solid var(--taskfocus-color);
-    background-color: var(--taskfocus-color);
-    line-height: .8rem;
-}
-.md-task-list-item:before{
-    content: none !important;
-}
-#write input[type=checkbox] {
-    position: absolute;
-    top: 6px;
-    left: -6px;
-    background-color: inherit;
+.task-list-item input:checked::before {
+    content: '✓';
+    color: var(--taskdone-color);
+    font-weight: bold;
+    border: 1px solid var(--taskdone-color);
+    background-color: #fff;
+    font-size: 0.75rem;
+    line-height: 0.8rem;
 }
 .md-task-list-item.task-list-done {
     text-decoration: line-through;
