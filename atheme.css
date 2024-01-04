@@ -4,48 +4,82 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @font-face {font-family: 'iconfont';src: url('data:font/ttf;charset=utf-8;base64,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') format('truetype');}.iconfont {font-family: "iconfont" !important;font-size: 16px;font-style: normal;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}.icon-quote::before {content: "\e60c";}.icon-fengche::before {content: "\e625";}
 :root {
+    /* 选中文字的背景色 */
     --select-text-bg-color: #ffafa3;
+    /* 页面背景色 */
     --bg-color: rgb(240, 248, 255);
+    /* 书写区背景色 */
     --write-color: rgb(255, 255, 255);
+    /* 侧边栏背景色 */
     --sidebarbg-color: #eee;
+    /* 光标所在处元素颜色 */
     --focus-color: #ff5d52;
+    /* 代码块主体背景色 */
     --codeblockbg-color: rgb(245, 245, 245);
+    /* 代码块文字颜色 */
     --codeblockfont-color: #555;
+    /* 代码块鼠标悬停行的颜色 */
     --codeblockline-color: #ffafa3;
+    /* 代码块头部背景色 */
     --codehead-color: rgb(214, 214, 239);
+    /* 代码块左侧竖线颜色 */
     --code-line-color: rgb(199, 159, 159);
+    /* 代码块行号文字颜色 */
     --codeblocknum-color: rgb(128, 128, 255);
+    /* 各级标题文字和背景色 */
     --h2-color: rgb(239, 112, 96);
     --h2text-color: #fff;
     --h3-color: #00B3ED;
     --h3text-color: #fff;
     --h4-color: #45B08C;
     --h5-color: #964B00;
+    /* 引号图标的颜色 */
     --blockquoteicon-color: rgb(0, 196, 182);
+    /* 引用块背景色 */
     --blockquotebg-color: rgb(229, 242, 229);
+    /* 引用块文字颜色 */
     --blockquotetext-color: #555;
+    /* 引用块头部颜色 */
     --blockquotehead-color: rgb(204, 229, 204);
+    /* 列表背景色 */
     --ulol-color: #81accf;
+    /* 列表文字颜色 */
     --olfore-color: #fff;
+    /* 表格偶数行背景色 */
     --tableevenrow-color: rgb(245, 245, 245);
+    /* 表格鼠标悬停行背景色 */
     --tablefocusrow-color: #ffafa3;
+    /* 表格边界颜色 */
     --tableborder-color: #c5c5c5;
+    /* 表头背景色 */
     --tablethbg-color: rgb(174, 211, 227);
+    /* 滚动条颜色 */
     --scrollbar-color: #9e9e9e;
-    --toc-color: green;
+    /* 超链接背景色 */
     --aback-color: #ffc83d;
+    /* 超链接悬停背景色 */
     --aback-color2: #f03a17;
+    /* 行内代码文字颜色 */
     --code-color: #964B00;
+    /* 行内代码背景色 */
     --codebg-color: rgb(245, 245, 245);
+    /* 高亮文字颜色 */
     --highlight-color: red;
+    /* 高亮背景色 */
     --highlightbg-color: yellow;
+    /* 分割线颜色 */
     --split-color: #00c4b6;
-    --body-color: #000000;
-    --para-color: #000000;
+    /* 侧边栏选中条目颜色 */
     --sidelist-selected-color: #eeeeee;
+    /* yaml背景色 */
     --yamlbg-color: #f7f7f7;
+    /* yaml文字颜色 */
     --yaml-color: #585858;
+    /* 主体文字颜色 */
+    --body-color: #000000;
+    /* 主体字体 */
     --body-font: 'Roboto Slab', 'Noto Serif SC';
+    /* 代码块字体 */
     --code-font: 'Fira Code', 'JetBrains Mono', 'Noto Sans SC';
 }
 html {
@@ -603,9 +637,9 @@ img:hover {
         padding: 0 !important;
     }
     #write a:not(.md-toc-inner) {
-        box-shadow: none;
+        box-shadow: none !important;
     }
     #write a:not(.md-toc-inner)::before {
-        content: none;
+        content: none !important;
     }
 }
