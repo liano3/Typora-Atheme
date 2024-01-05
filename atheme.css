@@ -539,7 +539,7 @@ img:hover {
     vertical-align: middle;
     text-align: center;
     border-radius: 1.2rem;
-    background-color: var(--task-color);
+    border: 2px solid var(--task-color);
 }
 .task-list-item input:checked::before {
     content: '✓';
