@@ -19,7 +19,7 @@
     /* 代码块文字颜色 */
     --codeblockfont-color: #555;
     /* 代码块鼠标悬停行的颜色 */
-    --codeblockline-color: #ffafa3;
+    --codeblockline-color: #e0f8f8;
     /* 代码块头部背景色 */
     --codehead-color: rgb(214, 214, 239);
     /* 代码块左侧竖线颜色 */
@@ -52,7 +52,7 @@
     /* 表格偶数行背景色 */
     --tableevenrow-color: rgb(245, 245, 245);
     /* 表格鼠标悬停行背景色 */
-    --tablefocusrow-color: #ffafa3;
+    --tablefocusrow-color: #e0f8f8;
     /* 表格边界颜色 */
     --tableborder-color: #c5c5c5;
     /* 表头背景色 */
@@ -551,7 +551,7 @@ img:hover {
     line-height: 0.8rem;
 }
 .md-task-list-item.task-list-done {
-    text-decoration: line-through;
+    text-decoration: none;
     color: #999;
 }
 .md-task-list-item.task-list-done span {
@@ -631,5 +631,8 @@ img:hover {
     }
     #write a:not(.md-toc-inner)::before {
         content: none !important;
+    }
+    img {
+        box-shadow: none;
     }
 }
