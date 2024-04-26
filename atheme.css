@@ -105,7 +105,9 @@
     /* 行内代码文字颜色 */
     --code-color: #964B00;
     /* 行内代码背景色 */
-    --codebg-color: rgb(245, 245, 245);
+    --codebg-color: #fefefe;
+    /* 行内公式颜色 */
+    --inline_math-color: rgb(108, 177, 255);
     /* 高亮文字颜色 */
     --highlight-color: red;
     /* 高亮背景色 */
@@ -451,7 +453,7 @@ table tr:last-child td:last-child {
     background-color: var(--codeblockline-color);
 }
 [md-inline='inline_math'] {
-    color: var(--h5-color);
+    color: var(--inline_math-color);
     font-size: 100%;
 }
 #write pre.md-meta-block {
@@ -472,16 +474,14 @@ table tr:last-child td:last-child {
     font-weight: bold;
 }
 #write code {
-    padding: 2px 4px;
-    border-radius: 5px;
     font-family: var(--code-font);
     font-size: 0.9rem;
     color: var(--code-color);
     background-color: var(--codebg-color);
-    transition: 0.5s;
-}
-#write code:hover {
-    box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 3px;
+    box-shadow: 0 0 1px 1px #c8d3df;
+    margin: 0 3px 0 3px;
+    padding: 0 2px 0 2px;
+    border-radius: 2px 2px 2px 2px;
 }
 hr {
     width: 100%;
