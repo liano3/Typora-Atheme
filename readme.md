@@ -18,3 +18,5 @@
 > 本主题可以很方便地修改配色，修改 `atheme.css` 中的如下部分即可：
 >
 > <img src="./assets/image-20240104125715422.png" alt="image-20240104125715422" style="zoom: 67%;" />
+
+> 本主题样式比较花，如果喜欢简洁风格的可以使用 `latex` 主题。记得下载安装字体：[Keldos-Li](https://github.com/Keldos-Li/typora-latex-theme-fonts)
