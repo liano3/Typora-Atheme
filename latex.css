@@ -486,6 +486,14 @@ li code {
   font-family: var(--code-font), var(--ui-font), monospace;
 }
 
+/* debug：解决分页时代码块左侧线条不够长的问题 */
+.CodeMirror-wrap .CodeMirror-code pre {
+  border-left: 1px solid #dddddd !important;
+}
+.CodeMirror-gutters {
+  border: none;
+}
+
 /* 目录 */
 .md-toc {
   font-size: var(--toc-font-size);
