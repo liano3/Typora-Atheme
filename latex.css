@@ -5,7 +5,7 @@
   /* 备选：Times, "Times New Roman" */
   --base-Latin-font: "Latin Modern Roman", "Latin Modern Roman 10", Times;
   --base-Chinese-font: "家族宋", "宋体-简", "华文宋体", "Noto Serif CJK SC";
-  --base-font-size: 9.5pt;
+  --base-font-size: 11pt;
   /* 引言字体 */
   --quote-font: "Latin Modern Roman", "Latin Modern Roman 10", Times,
     "Times New Roman", "华文仿宋";
@@ -70,7 +70,7 @@
   --toc-show-title: none;
   /* == 颜色设置 == */
   /* 超链接颜色 */
-  --link-color-light: #2E67D3;
+  --link-color-light: rgb(108, 177, 255);
   --link-color-dark: #8bb1f9;
 }
 
@@ -114,6 +114,8 @@ body {
 }
 #write a {
   color: var(--link-color-light);
+  border-bottom: 1px solid #81d8cf;
+  text-decoration: none;
 }
 
 hr {
@@ -465,7 +467,7 @@ li code {
   border: none;
   font-family: var(--code-font), var(--ui-font), monospace;
   box-sizing: border-box;
-  margin: 0 2px 0 2px;
+  /* margin: 0 2px 0 2px; */
   padding: 0 2px 0 2px;
   /* 圆角 */
   border-radius: 2px 2px 2px 2px;
