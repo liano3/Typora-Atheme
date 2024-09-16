@@ -1,48 +1,26 @@
 @font-face {
     font-family: "iconfont";
     src: url('./atheme/iconfont.ttf') format('truetype');
-    font-weight: normal;
 }
 @font-face {
     font-family: "Fira Code";
-    src: url('./atheme/FiraCode-Regular.ttf');
-    font-weight: normal;
-}
-@font-face {
-    font-family: "Fira Code";
-    src: url('./atheme/FiraCode-Medium.ttf');
-    font-weight: bold;
+    src: url('./atheme/FiraCode.ttf');
 }
 @font-face {
     font-family: "PT Serif";
-    src: url('./atheme/PTSerif-Regular.ttf');
-    font-weight: normal;
+    src: url('./atheme/PTSerif.ttf');
 }
 @font-face {
-    font-family: "PT Serif";
-    src: url('./atheme/PTSerif-Bold.ttf');
-    font-weight: bold;
+    font-family: "Jet brains";
+    src: url('./atheme/JetBrains.ttf');
 }
 @font-face {
-    font-family: "PT Serif";
-    src: url('./atheme/PTSerif-Italic.ttf');
-    font-style: italic;
+    font-family: "Song";
+    src: url('./atheme/Song.TTF');
 }
 @font-face {
-    font-family: "PT Serif";
-    src: url('./atheme/PTSerif-BoldItalic.ttf');
-    font-weight: bold;
-    font-style: italic;
-}
-@font-face {
-    font-family: "Songti";
-    src: url('./atheme/SC-Regular.otf');
-    font-weight: normal;
-}
-@font-face {
-    font-family: "Songti";
-    src: url('./atheme/SC-Bold.otf');
-    font-weight: bold;
+    font-family: "Kai";
+    src: url('./atheme/Kai.TTF');
 }
 :root {
     /* 选中文字的背景色 */
@@ -123,9 +101,9 @@
     /* 主体文字颜色 */
     --body-color: #000000;
     /* 主体字体 */
-    --body-font: "PT Serif", 'Songti', serif;
+    --body-font: "PT Serif", 'Song', serif;
     /* 代码块字体 */
-    --code-font: 'Fira Code', 'Songti', monospace;
+    --code-font: 'Fira Code', 'Kai', monospace;
 }
 html {
     font-size: 16px;
@@ -185,6 +163,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: 'Jet Brains', 'Kai';
     position: relative;
     font-weight: bold;
     line-height: 1.2;
@@ -327,6 +306,7 @@ ol:last-child {
     margin-bottom: 0;
 }
 blockquote {
+    font-family: 'Kai';
     color: var(--blockquotetext-color);
     background-color: var(--blockquotebg-color);
     border-radius: 10px;
@@ -422,7 +402,6 @@ table tbody+tbody {
     padding: 3px;
     font-family: var(--code-font);
     font-size: 0.9rem;
-    font-weight: bold;
     color: var(--codeblockfont-color);
     background-color: var(--codeblockbg-color);
     border-bottom-left-radius: 10px;
@@ -506,7 +485,7 @@ hr {
 }
 img {
     border: none !important;
-    /* box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 3px; */
+    box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 3px;
     border-radius: 1.2rem;
     transition: 0.5s;
 }
@@ -647,12 +626,6 @@ img:hover {
         box-shadow: none !important;
         margin: 0 !important;
         padding: 0 !important;
-    }
-    #write a:not(.md-toc-inner) {
-        box-shadow: none !important;
-    }
-    #write a:not(.md-toc-inner)::before {
-        content: none !important;
     }
     img {
         box-shadow: none;
