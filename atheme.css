@@ -23,87 +23,51 @@
     src: url('./atheme/Kai.TTF');
 }
 :root {
-    /* 选中文字的背景色 */
     --select-text-bg-color: #ffafa3;
-    /* 页面背景色 */
     --bg-color: rgb(240, 248, 255);
-    /* 书写区背景色 */
     --write-color: rgb(255, 255, 255);
-    /* 侧边栏背景色 */
     --sidebarbg-color: #eee;
-    /* 光标所在处元素颜色 */
     --focus-color: #ff5d52;
-    /* 代码块主体背景色 */
     --codeblockbg-color: rgb(245, 245, 245);
-    /* 代码块文字颜色 */
     --codeblockfont-color: #555;
-    /* 代码块鼠标悬停行的颜色 */
     --codeblockline-color: #e0f8f8;
-    /* 代码块头部背景色 */
     --codehead-color: rgb(214, 214, 239);
-    /* 代码块左侧竖线颜色 */
     --code-line-color: rgb(199, 159, 159);
-    /* 代码块行号文字颜色 */
     --codeblocknum-color: rgb(128, 128, 255);
-    /* 各级标题文字和背景色 */
     --h2-color: rgb(239, 112, 96);
     --h2text-color: #fff;
     --h3-color: #00B3ED;
     --h3text-color: #fff;
     --h4-color: #45B08C;
     --h5-color: #964B00;
-    /* 引号图标的颜色 */
     --blockquoteicon-color: rgb(0, 196, 182);
-    /* 引用块背景色 */
     --blockquotebg-color: rgba(229, 242, 229, 0.8);
-    /* 引用块文字颜色 */
     --blockquotetext-color: #777777;
-    /* 引用块头部颜色 */
     --blockquotehead-color: rgb(204, 229, 204);
-    /* 列表背景色 */
     --ulol-color: #81accf;
-    /* 列表文字颜色 */
     --olfore-color: #fff;
-    /* 任务列表背景色 */
     --task-color: rgb(239, 112, 96);
-    /* 任务列表完成后背景色 */
     --taskdone-color: #45B08C;
-    /* 表格 */
     --main-color-major: rgb(61, 192, 253);
     --thead-background-color: rgb(179, 229, 252);
     --tbody-background-color: rgb(179, 229, 252, 0.36);
-    /* 滚动条颜色 */
     --scrollbar-color: #9e9e9e;
-    /* 超链接文本颜色 */
     --atext-color: rgb(108, 177, 255);
-    /* 超链接下划线颜色 */
     --abottom-color: #81d8cf;
-    /* 超链接悬停文本颜色 */
     --ahover-color: #ffffffe6;
-    /* 行内代码文字颜色 */
     --code-color: #964B00;
-    /* 行内代码背景色 */
     --codebg-color: #fefefe;
-    /* 行内公式颜色 */
     --inline_math-color: rgb(108, 177, 255);
-    /* 高亮文字颜色 */
     --highlight-color: red;
-    /* 高亮背景色 */
     --highlightbg-color: yellow;
-    /* 分割线颜色 */
     --split-color: #00c4b6;
-    /* 侧边栏选中条目颜色 */
     --sidelist-selected-color: #eeeeee;
-    /* yaml背景色 */
-    --yamlbg-color: #f7f7f7;
-    /* yaml文字颜色 */
-    --yaml-color: #585858;
-    /* 主体文字颜色 */
+    --yamlbg-color: #f6f8fa;
+    --yaml-color: #4870ac;
     --body-color: #000000;
-    /* 主体字体 */
     --body-font: "PT Serif", 'Song', serif;
-    /* 代码块字体 */
-    --code-font: 'Fira Code', 'Kai', monospace;
+    --head-font: 'Jet Brains', 'Kai';
+    --code-font: 'Jet brains', 'Kai', monospace;
 }
 html {
     font-size: 16px;
@@ -126,10 +90,6 @@ body {
     line-height: 1.6rem;
     word-spacing: .05rem;
 }
-#write>ul:first-child,
-#write>ol:first-child {
-    margin-top: 30px;
-}
 #write a {
     border-bottom: 2px solid var(--abottom-color);
     padding: 0 4px;
@@ -148,11 +108,6 @@ body {
     font-weight: bold;
     border-bottom: none;
 }
-@keyframes rightRun {
-    100% {
-        transform: translateX(0)
-    }
-}
 .md-toc {
     margin-top: 40px;
     padding-bottom: 20px;
@@ -163,7 +118,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Jet Brains', 'Kai';
+    font-family: var(--head-font);
     position: relative;
     font-weight: bold;
     line-height: 1.2;
@@ -206,6 +161,14 @@ h2 span {
     border-top-left-radius: 10px;
     box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.5);
 }
+@keyframes avatar_turn_around {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
 h2::before {
     content: '\e614' !important;
     color: var(--h2-color);
@@ -217,14 +180,6 @@ h2::before {
 }
 h2:hover::before {
     animation: avatar_turn_around 0.5s linear infinite;
-}
-@keyframes avatar_turn_around {
-    from {
-        transform: rotate(0)
-    }
-    to {
-        transform: rotate(360deg)
-    }
 }
 h2::after {
     display: inline-block;
@@ -278,35 +233,8 @@ h6 {
     margin-top: 0.5rem;
     font-size: 1.1rem;
 }
-p,
-blockquote,
-ul,
-ol,
-dl,
-table {
-    margin: 0.8rem 0;
-}
-li>ol,
-li>ul {
-    margin: 0 0;
-}
-li p.first {
-    display: inline-block;
-}
-ul,
-ol {
-    padding-left: 30px;
-}
-ul:first-child,
-ol:first-child {
-    margin-top: 0;
-}
-ul:last-child,
-ol:last-child {
-    margin-bottom: 0;
-}
 blockquote {
-    font-family: 'Kai';
+    font-family: var(--head-font);
     color: var(--blockquotetext-color);
     background-color: var(--blockquotebg-color);
     border-radius: 10px;
@@ -407,15 +335,12 @@ table tbody+tbody {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.cm-s-inner .CodeMirror-linenumber {
+.CodeMirror-linenumber {
     font-size: 0.9rem;
     color: var(--codeblocknum-color);
 }
-.CodeMirror-wrap .CodeMirror-code pre {
-    border-left: 1px solid var(--code-line-color);
-}
 .CodeMirror-gutters {
-    border: none;
+    border-right: 1px solid var(--code-line-color);
 }
 #write .CodeMirror-cursors .CodeMirror-cursor {
     border-left: 2px solid var(--focus-color);
@@ -430,14 +355,12 @@ table tbody+tbody {
     color: var(--inline_math-color);
     font-size: 100%;
 }
-#write pre.md-meta-block {
-    font-family: var(--body-font);
-    color: var(--yaml-color) !important;
+pre.md-meta-block {
+    font-family: var(--head-font);
+    color: var(--yaml-color);
     padding: 15px;
-    background: var(--yamlbg-color) !important;
-    font-size: 0.8rem;
-    line-height: 1.45;
-    border-radius: 5px;
+    background: var(--yamlbg-color);
+    filter: drop-shadow(#d2dff4 0px 3px 3px);
 }
 #write span[md-inline="highlight"] mark {
     background-color: var(--highlightbg-color);
@@ -505,9 +428,6 @@ img:hover {
     font-family: var(--code-font);
     font-size: small;
 }
-.md-tag {
-    color: inherit;
-}
 .sidebar-tabs {
     border-bottom: none;
 }
@@ -525,9 +445,6 @@ img:hover {
 .outline-item:hover {
     color: var(--titlebefore-color) !important;
     background-color: var(--sidelist-selected-color);
-}
-.md-lang {
-    color: #b4654d;
 }
 #write input[type=checkbox] {
     width: 0;
