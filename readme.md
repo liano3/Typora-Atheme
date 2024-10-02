@@ -2,9 +2,11 @@
 
 ## 效果预览
 
-![image-20240922131139386](./assets/image-20240922131139386.png)
+![image-20241002142722981](./assets/image-20241002142722981.png)
 
-![image-20240922131205137](./assets/image-20240922131205137.png)
+![image-20241002142734211](./assets/image-20241002142734211.png)
+
+![image-20241002142755853](./assets/image-20241002142755853.png)
 
 ## 使用方法
 
@@ -14,6 +16,5 @@
 
 > 本主题可以很方便地修改配色，修改 `atheme.css` 中的如下部分即可：
 >
-> <img src="./assets/image-20240104125715422.png" alt="image-20240104125715422" style="zoom: 67%;" />
+> ![image-20241002142507647](./assets/image-20241002142507647.png)
 
-> 本主题样式比较花，如果喜欢简洁风格的可以使用 `latex` 主题。记得下载安装字体：[Keldos-Li](https://github.com/Keldos-Li/typora-latex-theme-fonts)
