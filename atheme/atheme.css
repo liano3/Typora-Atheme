@@ -1,100 +1,4 @@
-/* 字体资源 */
-@font-face {
-    font-family: "iconfont";
-    src: url('./atheme/iconfont.ttf') format('truetype');
-}
-@font-face {
-    font-family: "Fira Code";
-    src: url('./atheme/FiraCode.ttf');
-}
-@font-face {
-    font-family: "PT Serif";
-    src: url('./atheme/PTSerif.ttf');
-}
-@font-face {
-    font-family: "Jet brains";
-    src: url('./atheme/JetBrains.ttf');
-}
-@font-face {
-    font-family: "Song";
-    src: url('./atheme/Song.TTF');
-}
-@font-face {
-    font-family: "Kai";
-    src: url('./atheme/Kai.TTF');
-}
-:root {
-    /* TODO: 颜色 */
-    --bg-color: #fefae0;
-    --text-color: #000;
-    --write-bg-color: #fff;
-
-    --link-under-color: #2a9d8f;
-    --link-text-color: #1b98e0;
-    --link-hover-bg-color: #2a9d8f;
-    --link-hover-text-color: #fff;
-    
-    --h1-hover-under-color: #e76f51;
-    --h2-under-color: #f4a261;
-    --h2-bg-color: #f4a261;
-    --h2-text-color: #fff;
-    --h2-icon-color: #f4a261;
-    --h2-shadow-color: rgba(0, 0, 0, 0.1);
-    --h3-bg-color: #219ebc;
-    --h3-text-color: #fff;
-    --h3-shadow-color: rgba(0, 0, 0, 0.6);
-    --h4-border-color: #2a9d8f;
-    --h5-border-color: #606c38;
-    
-    --quote-before-bg-color: #e9ecef;
-    --quote-text-color: #1b98e0;
-    --quote-bg-color: #f8f9fa;
-    --quote-icon-color: #1b98e0;
-    --quote-hover-icon-color: red;
-    
-    --table-head-text-color: red;
-    --table-head-bg-color: #b3e5fc;
-    --table-line-color: #1b98e0;
-    --table-even-bg-color: #f8f9fa;
-    
-    --codeblock-before-bg-color: #e9ecef;
-    --codeblock-text-color: #000;
-    --codeblock-bg-color: #f8f9fa;
-    --codeblock-num-color: red;
-    --codeblock-line-color: #dee2e6;
-    --codeblock-cursor-color: #007bff;
-    --codeblock-hover-color: #8ecae6;
-    
-    --inlinemath-text-color: #1b98e0;
-    
-    --yaml-text-color: #495057;
-    --yaml-bg-color: #f8f9fa;
-    
-    --highlight-bg-color: #fff3cd;
-    --highlight-text-color: #856404;
-    
-    --code-text-color: #e83e8c;
-    --code-bg-color: #f8f9fa;
-
-    --split-color: red;
-    
-    --sidebar-bg-color: #f8f9fa;
-    --sidebar-hover-text-color: #1b98e0;
-    --sidebar-hover-bg-color: #e9ecef;
-    
-    --list-marker-color: #1e98e0;
-    --list-marker-bg-color: #f8f9fa;
-    --list-text-color: #000;
-    
-    --scrollbar-bg-color: #1b98e0;
-    --scrollbar-track-color: #f8f9fa;
-    --toc-border-color: #1b98e0;
-
-    /* 字体 */
-    --body-font: "PT Serif", 'Song', serif;
-    --head-font: 'Jet Brains', 'Kai';
-    --code-font: 'Jet brains', 'Kai', monospace;
-}
+/* 整体 */
 html {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
@@ -131,15 +35,6 @@ body {
     background-color: var(--link-hover-bg-color);
     color: var(--link-hover-text-color);
     cursor: pointer;
-}
-/* 目录 */
-#write a.md-toc-inner {
-    font-weight: bold;
-    border-bottom: none;
-}
-.md-toc {
-    margin-top: 40px;
-    padding-bottom: 20px;
 }
 /* 标题 */
 h1,
@@ -540,9 +435,15 @@ li.md-list-item {
     background: var(--scrollbar-track-color);
 }
 /* 目录 */
+#write a.md-toc-inner {
+    font-weight: bold;
+    border-bottom: none;
+}
 .md-toc {
+    margin-top: 40px;
+    padding-bottom: 20px;
     border: 1px dashed var(--toc-border-color);
-	background-image: url(./atheme/jewelry.jpeg);
+	background-image: var(--toc-image);
 	background-repeat: no-repeat;
 	background-position: top right;
 	background-size: auto;

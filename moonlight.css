@@ -1,0 +1,173 @@
+/* 引入样式 */
+@import url("./atheme/atheme.css");
+/* 字体资源 */
+@font-face {
+    font-family: "iconfont";
+    src: url('./atheme/iconfont.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Fira Code";
+    src: url('./atheme/FiraCode.ttf');
+}
+@font-face {
+    font-family: "PT Serif";
+    src: url('./atheme/PTSerif.ttf');
+}
+@font-face {
+    font-family: "Jet brains";
+    src: url('./atheme/JetBrains.ttf');
+}
+@font-face {
+    font-family: "Song";
+    src: url('./atheme/Song.TTF');
+}
+@font-face {
+    font-family: "Kai";
+    src: url('./atheme/Kai.TTF');
+}
+/* 变量配置 */
+:root {
+    /* 夜间模式颜色（created by GPT）*/
+    --bg-color: #1e1e1e;
+    --text-color: #dcdcdc;
+    --write-bg-color: #2e2e2e;
+    /* 链接 */
+    --link-under-color: #569cd6;
+    --link-text-color: #9cdcfe;
+    --link-hover-bg-color: #569cd6;
+    --link-hover-text-color: #ffffff;
+    /* 标题 */
+    --h1-hover-under-color: #d16969;
+    --h2-under-color: #d7ba7d;
+    --h2-bg-color: #d7ba7d;
+    --h2-text-color: #1e1e1e;
+    --h2-icon-color: #d7ba7d;
+    --h2-shadow-color: rgba(0, 0, 0, 0.2);
+    --h3-bg-color: #4ec9b0;
+    --h3-text-color: #1e1e1e;
+    --h3-shadow-color: rgba(255, 255, 255, 0.6);
+    --h4-border-color: #569cd6;
+    --h5-border-color: #d16969;
+    /* 引用 */
+    --quote-before-bg-color: #2d2d2d;
+    --quote-text-color: #9cdcfe;
+    --quote-bg-color: #1e1e1e;
+    --quote-icon-color: #9cdcfe;
+    --quote-hover-icon-color: #d16969;
+    /* 表格 */
+    --table-head-text-color: #d16969;
+    --table-head-bg-color: #3e4451;
+    --table-line-color: #9cdcfe;
+    --table-even-bg-color: #2d2d2d;
+    /* 代码 */
+    --codeblock-before-bg-color: #2d2d2d;
+    --codeblock-text-color: #dcdcdc;
+    --codeblock-bg-color: #1e1e1e;
+    --codeblock-num-color: #c586c0;
+    --codeblock-line-color: #3e4451;
+    --codeblock-cursor-color: #dcdcaa;
+    --codeblock-hover-color: #264653;
+    --code-text-color: #d16969;
+    --code-bg-color: #2d2d2d;
+    /* 列表 */
+    --list-marker-color: #9cdcfe;
+    --list-marker-bg-color: #2d2d2d;
+    --list-text-color: #dcdcdc;
+    /* 侧栏 */
+    --sidebar-bg-color: #2e2e2e;
+    --sidebar-hover-text-color: #9cdcfe;
+    --sidebar-hover-bg-color: #3e3e3e;
+    /* 滚动条 */
+    --scrollbar-bg-color: #569cd6;
+    --scrollbar-track-color: #2d2d2d;
+    /* 其他 */
+    --toc-border-color: #9cdcfe;
+    --toc-image: url("./jewelry.jpeg");
+    --inlinemath-text-color: #9cdcfe;
+    --yaml-text-color: #dcdcdc;
+    --yaml-bg-color: #1e1e1e;
+    --highlight-bg-color: #d7ba7d;
+    --highlight-text-color: #1e1e1e;
+    --split-color: #569cd6;
+    /* 字体 */
+    --body-font: "PT Serif", 'Song', serif;
+    --head-font: 'Jet Brains', 'Kai';
+    --code-font: 'Jet brains', 'Kai', monospace;
+}
+/* 代码块夜间模式 */
+.cm-s-inner .cm-keyword {
+    color: #66cfe9 !important;
+}
+.cm-s-inner .cm-operator {
+    color: #e7fc4a !important;
+}
+.cm-s-inner .cm-variable,
+.cm-s-inner .cm-builtin,
+.cm-s-inner .cm-header,
+.cm-s-inner .cm-tag,
+.cm-s-inner .cm-property,
+.cm-s-inner .cm-quote {
+    color: #c2eaff !important;
+}
+.cm-s-inner .cm-variable-2 {
+    color: #8eb0b0 !important;
+}
+.cm-s-inner .cm-variable-3,
+.cm-s-inner .cm-type,
+.cm-s-inner .cm-atom {
+    color: #debbfb !important;
+}
+.cm-s-inner .cm-number {
+    color: #b0f6ae !important;
+}
+.cm-s-inner .cm-def,
+.cm-s-inner .cm-qualifier {
+    color: #f9fbfd !important;
+}
+.cm-s-inner .cm-string {
+    color: #acd9a4 !important;
+}
+.cm-s-inner .cm-string-2 {
+    color: #89acc5 !important;
+}
+.cm-s-inner .cm-comment {
+    color: rgb(168, 168, 168) !important;
+}
+.cm-s-inner .cm-meta {
+    color: #a0b4f6 !important;
+}
+.cm-s-inner .cm-attribute {
+    color: #baacc3 !important;
+}
+.cm-s-inner .cm-error {
+    color: rgba(255, 255, 255, 1) !important;
+    background-color: #ffcff140 !important;
+}
+.cm-s-inner .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: white !important;
+}
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid var(--codeblock-cursor-color);
+    z-index: 3;
+}
+.cm-s-inner div.CodeMirror-selected {
+    background: rgba(167, 178, 189, 0.2) !important;
+}
+.cm-s-inner.CodeMirror-focused div.CodeMirror-selected {
+    background: rgba(167, 178, 189, 0.2) !important;
+}
+.cm-s-inner .CodeMirror-selected,
+.cm-s-inner .CodeMirror-selectedtext {
+    background-color: rgba(167, 178, 189, 0.0) !important;
+}
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line>span::-moz-selection,
+.cm-s-inner .CodeMirror-line>span>span::-moz-selection {
+    background-color: rgba(167, 178, 189, 0.2);
+}
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line>span::selection,
+.cm-s-inner .CodeMirror-line>span>span::selection {
+    background-color: rgba(167, 178, 189, 0.2);
+}
