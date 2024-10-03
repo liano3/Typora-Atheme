@@ -14,7 +14,7 @@
     src: url('./atheme/PTSerif.ttf');
 }
 @font-face {
-    font-family: "Jet brains";
+    font-family: "Jet Brains";
     src: url('./atheme/JetBrains.ttf');
 }
 @font-face {
@@ -54,6 +54,16 @@
     --quote-bg-color: #f8f9fa;
     --quote-icon-color: #1b98e0;
     --quote-hover-icon-color: red;
+    --note-border-color: #3e69d7;
+    --note-bg-color: rgba(62, 105, 215, 0.06);
+    --tip-border-color: #03b736;
+    --tip-bg-color: rgba(3, 183, 54, 0.06);
+    --important-border-color: #8250df;
+    --important-bg-color: rgba(130, 80, 223, 0.06);
+    --warning-border-color: #e30f2e;
+    --warning-bg-color: rgba(227, 15, 46, 0.06);
+    --caution-border-color: #f59102;
+    --caution-bg-color: rgba(245, 145, 2, 0.06);
     /* 表格 */
     --table-head-text-color: red;
     --table-head-bg-color: #b3e5fc;
@@ -75,6 +85,7 @@
     --list-text-color: #000;
     /* 侧栏 */
     --sidebar-bg-color: #f8f9fa;
+    --sidebar-border-color: #aaa;
     --sidebar-hover-text-color: #1b98e0;
     --sidebar-hover-bg-color: #e9ecef;
     /* 滚动条 */
@@ -91,6 +102,6 @@
     --split-color: red;
     /* 字体 */
     --body-font: "PT Serif", 'Song', serif;
-    --head-font: 'Jet Brains', 'Kai';
-    --code-font: 'Jet brains', 'Kai', monospace;
+    --head-font: 'Jet Brains', 'Kai', serif;
+    --code-font: 'Jet Brains', 'Kai', monospace;
 }

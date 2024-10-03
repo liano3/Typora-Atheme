@@ -2,15 +2,17 @@
 
 ## 预览
 
-![image-20241002194203595](./assets/image-20241002194203595.png)
+![image-20241003205030347](./assets/image-20241003205030347.png)
 
-![image-20241002194252595](./assets/image-20241002194252595.png)
+![image-20241003205050346](./assets/image-20241003205050346.png)
 
-![image-20241002194452237](./assets/image-20241002194452237.png)
+![image-20241003205105485](./assets/image-20241003205105485.png)
+
+![image-20241003205112727](./assets/image-20241003205112727.png)
 
 （夜间模式，偷懒用 GPT 直接生成的配色😋）
 
-![image-20241002193149128](./assets/image-20241002193149128.png)
+![image-20241003205128853](./assets/image-20241003205128853.png)
 
 ## 安装
 
@@ -25,6 +27,7 @@
 ## 参考
 
 - [dyzj](https://github.com/muggledy/typora-dyzj-theme)
+- [mdmdt](https://github.com/cayxc/Mdmdt)
 - [lapis](https://github.com/YiNNx/typora-theme-lapis)
 - [neil](https://gitee.com/iwuyc-tools/typora-neil-theme)
 - [orange-heart](https://github.com/evgo2017/typora-theme-orange-heart)
