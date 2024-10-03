@@ -7,7 +7,7 @@ html {
 body {
     font-family: var(--body-font);
     color: var(--text-color);
-    line-height: 1.6rem;
+    line-height: 1.6;
 }
 #write {
     background-color: var(--write-bg-color);
@@ -18,14 +18,14 @@ body {
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 12px;
 }
 #write p {
-    line-height: 1.6rem;
-    word-spacing: .05rem;
+    line-height: 1.6;
+    word-spacing: 0.05rem;
 }
 /* 超链接 */
 #write a {
     border-bottom: 2px solid var(--link-under-color);
     padding: 0 4px;
-    transition: .3s;
+    transition: 0.3s;
     color: var(--link-text-color);
     text-decoration: none;
 }
@@ -37,12 +37,7 @@ body {
     cursor: pointer;
 }
 /* 标题 */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--head-font);
     position: relative;
     font-weight: bold;
@@ -66,9 +61,7 @@ h1 span:after {
     position: absolute;
     transform: scaleX(0);
     width: 100%;
-    transition-delay: 0s;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 h1:hover span:after {
     transform: scaleX(1);
@@ -95,16 +88,17 @@ h2 span {
     }
 }
 h2::before {
-    content: '\e614' !important;
+    content: '\e614';
     color: var(--h2-icon-color);
     font-family: "iconfont";
     display: inline-block;
     animation: avatar_turn_around 2s linear infinite;
     font-size: 28px;
     margin-left: -28px;
+    will-change: transform;
 }
 h2:hover::before {
-    animation: avatar_turn_around 0.5s linear infinite;
+    animation-duration: 0.5s;
 }
 h2::after {
     display: inline-block;
@@ -132,15 +126,13 @@ h3::before {
 }
 h3 span:hover {
     padding-left: 15px;
-    transition: 0.5s;
+    transition: padding-left 0.5s;
 }
 h4 {
     margin-top: 0.8rem;
     margin-bottom: 0;
     font-size: 1.2rem;
-    color: var();
     padding: 2px 8px;
-    font-size: 1.2rem;
     display: inline-block;
     border: 1px solid var(--h4-border-color);
     border-top: 3px solid var(--h4-border-color);
@@ -165,7 +157,7 @@ blockquote {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 3px;
     position: relative;
-    transition: 0.5s;
+    transition: transform 0.5s;
     padding: 0px 15px 5px;
 }
 blockquote::before {
@@ -188,47 +180,37 @@ blockquote:hover::before {
 }
 /* 表格 */
 table {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 table th {
-	color: var(--table-head-text-color);
+    color: var(--table-head-text-color);
 }
-table td:is(:first-child) {
-	font-weight: bold;
+table td:first-child {
+    font-weight: bold;
 }
 table th:not(:last-child),
 table td:not(:last-child) {
-	border-right: 1px dashed var(--table-line-color);
+    border-right: 1px dashed var(--table-line-color);
 }
 table th,
 table td {
-	padding: 8px;
-	line-height: 1.25rem;
-	vertical-align: top;
-	border-top: 1px solid var(--table-line-color);
+    padding: 8px;
+    line-height: 1.25rem;
+    vertical-align: top;
+    border-top: 1px solid var(--table-line-color);
 }
 thead tr {
-	background-color: var(--table-head-bg-color);
+    background-color: var(--table-head-bg-color);
 }
 tbody tr:nth-of-type(2n) {
-	background-color: var(--table-even-bg-color);
+    background-color: var(--table-even-bg-color);
 }
-table th {
-	font-weight: bold;
-}
-table thead th {
-	vertical-align: bottom;
-}
-table caption+thead tr:first-child th,
-table caption+thead tr:first-child td,
-table colgroup+thead tr:first-child th,
-table colgroup+thead tr:first-child td,
 table thead:first-child tr:first-child th,
 table thead:first-child tr:first-child td {
-	border-top: 0
+    border-top: 0;
 }
 table tbody+tbody {
-	border-top: 2px solid var(--table-line-color);
+    border-top: 2px solid var(--table-line-color);
 }
 /* 代码块 */
 .md-fences {
@@ -236,7 +218,7 @@ table tbody+tbody {
     background-color: var(--codeblock-before-bg-color);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 3px;
-    transition: 0.5s;
+    transition: transform 0.5s;
 }
 .md-fences::before {
     position: absolute;
@@ -247,8 +229,7 @@ table tbody+tbody {
     height: 15px;
     border-radius: 50%;
     background: rgb(252, 98, 93);
-    box-shadow: 25px 0px rgb(253, 188, 64),
-                50px 0px rgb(53, 205, 75);
+    box-shadow: 25px 0px rgb(253, 188, 64), 50px 0px rgb(53, 205, 75);
 }
 .md-fences:hover {
     transform: translateY(-8px);
@@ -307,9 +288,9 @@ pre.md-meta-block {
     color: var(--code-text-color);
     background-color: var(--code-bg-color);
     box-shadow: 0 0 1px 1px #c8d3df;
-    margin: 0 3px 0 3px;
-    padding: 0 2px 0 2px;
-    border-radius: 2px 2px 2px 2px;
+    margin: 0 3px;
+    padding: 0 2px;
+    border-radius: 2px;
 }
 /* 分隔线 */
 hr {
@@ -326,7 +307,7 @@ hr {
 img {
     box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 3px;
     border-radius: 1.2rem;
-    transition: 0.5s;
+    transition: transform 0.5s;
 }
 img:hover {
     transform: scale(1.1);
@@ -400,15 +381,13 @@ li.md-list-item {
 .task-list-item input::before {
     content: "";
     display: inline-block;
-    width: 1.0125rem;
-    height: 1.0125rem;
+    width: 1rem;
+    height: 1rem;
     vertical-align: middle;
     text-align: center;
     border: 1px solid var(--list-marker-color);
-    border-radius: 1.2rem;
+    border-radius: 50%;
     background-color: #fdfdfd;
-    margin-left: -0.1rem;
-    margin-right: 0.1rem;
     margin-top: -.6rem;
 }
 .task-list-item input:checked::before {
@@ -422,8 +401,8 @@ li.md-list-item {
 }
 /* 滚动条 */
 ::-webkit-scrollbar {
-    width: 10px;  
-    height: 0px;
+    width: 15px;
+    height: 10px;
 }
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:active {
@@ -443,26 +422,25 @@ li.md-list-item {
     margin-top: 40px;
     padding-bottom: 20px;
     border: 1px dashed var(--toc-border-color);
-	background-image: var(--toc-image);
-	background-repeat: no-repeat;
-	background-position: top right;
-	background-size: auto;
-	background-origin: padding-box;
+    background-image: var(--toc-image);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto;
+    background-origin: padding-box;
 }
 .md-toc::before {
-	content: '目录 Contents';
-	display: table;
-	border-bottom: 1px dashed var(--toc-border-color);
-	padding: 0.4em 0em 0.4em 1em;
-	text-align: left;
-	vertical-align: middle;
-	width: 100%;
-	height: 1.8em;
+    content: '目录 Contents';
+    display: table;
+    border-bottom: 1px dashed var(--toc-border-color);
+    padding: 0.4em 0em 0.4em 1em;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+    height: 1.8em;
 }
 /* 打印PDF */
 @media print {
-    html,
-    body {
+    html, body {
         font-size: 15px !important;
     }
     pre {
