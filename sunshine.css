@@ -77,8 +77,8 @@
     --codeblock-line-color: #dee2e6;
     --codeblock-cursor-color: #007bff;
     --codeblock-hover-color: #8ecae6;
-    --code-text-color: #e83e8c;
-    --code-bg-color: #f8f9fa;
+    --code-text-color: #4870ac;
+    --code-bg-color: #f6f8fa;
     /* 列表 */
     --list-marker-color: #1e98e0;
     --list-marker-bg-color: #f8f9fa;
@@ -102,6 +102,6 @@
     --split-color: red;
     /* 字体 */
     --body-font: "PT Serif", 'Song', serif;
-    --head-font: 'Jet Brains', 'Kai', serif;
+    --head-font: 'PT Serif', 'Kai', serif;
     --code-font: 'Jet Brains', 'Kai', monospace;
 }
