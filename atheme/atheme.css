@@ -3,6 +3,7 @@ html {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     background-color: var(--bg-color);
+    font-variant-ligatures: none !important;
 }
 body {
     font-family: var(--body-font);

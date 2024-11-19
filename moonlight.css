@@ -107,7 +107,7 @@
     /* 字体 */
     --body-font: "Sans";
     --head-font: "Sans";
-    --code-font: 'Jet Brains', 'Song', monospace;
+    --code-font: 'Fira Code', 'Song';
 }
 /* 放大字体，便于阅读 */
 html {

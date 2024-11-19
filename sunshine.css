@@ -105,7 +105,7 @@
     --highlight-text-color: #856404;
     --split-color: red;
     /* 字体 */
-    --body-font: "PT Serif", 'Song', serif;
-    --head-font: 'PT Serif', 'Kai', serif;
-    --code-font: 'Jet Brains', 'Song', monospace;
+    --body-font: "PT Serif", 'Song';
+    --head-font: 'PT Serif', 'Kai';
+    --code-font: 'Jet Brains', 'Song';
 }
