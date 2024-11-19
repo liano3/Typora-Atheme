@@ -194,9 +194,15 @@ blockquote p,
     background: var(--note-bg-color);
     color: var(--note-border-color);
 }
+.md-alert.md-alert-note .md-alert-text-note {
+    color: var(--note-border-color);
+}
 .md-alert.md-alert-tip {
     border-left-color: var(--tip-border-color);
     background: var(--tip-bg-color);
+    color: var(--tip-border-color);
+}
+.md-alert.md-alert-tip .md-alert-text-tip {
     color: var(--tip-border-color);
 }
 .md-alert.md-alert-important {
@@ -204,14 +210,23 @@ blockquote p,
     background: var(--important-bg-color);
     color: var(--important-border-color);
 }
+.md-alert.md-alert-important .md-alert-text-important {
+    color: var(--important-border-color);
+}
 .md-alert.md-alert-caution {
     border-left-color: var(--caution-border-color);
     background: var(--caution-bg-color);
     color: var(--caution-border-color);
 }
+.md-alert.md-alert-caution .md-alert-text-caution {
+    color: var(--caution-border-color);
+}
 .md-alert.md-alert-warning {
     border-left-color: var(--warning-border-color);
     background: var(--warning-bg-color);
+    color: var(--warning-border-color);
+}
+.md-alert.md-alert-warning .md-alert-text-warning {
     color: var(--warning-border-color);
 }
 /* 表格 */
