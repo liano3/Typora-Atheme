@@ -19,11 +19,15 @@
 }
 @font-face {
     font-family: "Song";
-    src: url('./atheme/Song.TTF');
+    src: url('./atheme/Song.ttf');
 }
 @font-face {
     font-family: "Kai";
-    src: url('./atheme/Kai.TTF');
+    src: url('./atheme/Kai.ttf');
+}
+@font-face {
+    font-family: "Sans";
+    src: url('./atheme/OPPOSans.ttf');
 }
 /* 变量配置 */
 :root {
@@ -50,7 +54,7 @@
     --h5-border-color: #606c38;
     /* 引用 */
     --quote-before-bg-color: #e9ecef;
-    --quote-text-color: #1b98e0;
+    --quote-text-color: #333;
     --quote-bg-color: #f8f9fa;
     --quote-icon-color: #1b98e0;
     --quote-hover-icon-color: red;
@@ -103,5 +107,5 @@
     /* 字体 */
     --body-font: "PT Serif", 'Song', serif;
     --head-font: 'PT Serif', 'Kai', serif;
-    --code-font: 'Jet Brains', 'Kai', monospace;
+    --code-font: 'Jet Brains', 'Song', monospace;
 }

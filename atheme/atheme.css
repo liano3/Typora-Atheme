@@ -192,22 +192,27 @@ blockquote p,
 .md-alert.md-alert-note {
     border-left-color: var(--note-border-color);
     background: var(--note-bg-color);
+    color: var(--note-border-color);
 }
 .md-alert.md-alert-tip {
     border-left-color: var(--tip-border-color);
     background: var(--tip-bg-color);
+    color: var(--tip-border-color);
 }
 .md-alert.md-alert-important {
     border-left-color: var(--important-border-color);
     background: var(--important-bg-color);
+    color: var(--important-border-color);
 }
 .md-alert.md-alert-caution {
     border-left-color: var(--caution-border-color);
     background: var(--caution-bg-color);
+    color: var(--caution-border-color);
 }
 .md-alert.md-alert-warning {
     border-left-color: var(--warning-border-color);
     background: var(--warning-bg-color);
+    color: var(--warning-border-color);
 }
 /* 表格 */
 table {

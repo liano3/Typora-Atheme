@@ -19,11 +19,15 @@
 }
 @font-face {
     font-family: "Song";
-    src: url('./atheme/Song.TTF');
+    src: url('./atheme/Song.ttf');
 }
 @font-face {
     font-family: "Kai";
-    src: url('./atheme/Kai.TTF');
+    src: url('./atheme/Kai.ttf');
+}
+@font-face {
+    font-family: "Sans";
+    src: url('./atheme/OPPOSans.ttf');
 }
 /* 变量配置 */
 :root {
@@ -50,20 +54,20 @@
     --h5-border-color: #d16969;
     /* 引用 */
     --quote-before-bg-color: #2d2d2d;
-    --quote-text-color: #9cdcfe;
+    --quote-text-color: #eee;
     --quote-bg-color: #1e1e1e;
     --quote-icon-color: #9cdcfe;
     --quote-hover-icon-color: #d16969;
     --note-border-color: #3e69d7;
-    --note-bg-color: rgba(62, 105, 215, 0.15);
+    --note-bg-color: rgba(62, 105, 215, 0.2);
     --tip-border-color: #03b736;
-    --tip-bg-color: rgba(3, 183, 54, 0.15);
+    --tip-bg-color: rgba(3, 183, 54, 0.2);
     --important-border-color: #8250df;
-    --important-bg-color: rgba(130, 80, 223, 0.15);
+    --important-bg-color: rgba(130, 80, 223, 0.2);
     --warning-border-color: #e30f2e;
-    --warning-bg-color: rgba(227, 15, 46, 0.15);
+    --warning-bg-color: rgba(227, 15, 46, 0.2);
     --caution-border-color: #f59102;
-    --caution-bg-color: rgba(245, 145, 2, 0.15);
+    --caution-bg-color: rgba(245, 145, 2, 0.2);
     /* 表格 */
     --table-head-text-color: #d16969;
     --table-head-bg-color: #3e4451;
@@ -101,9 +105,16 @@
     --highlight-text-color: #1e1e1e;
     --split-color: #569cd6;
     /* 字体 */
-    --body-font: "PT Serif", 'Song', serif;
-    --head-font: 'Jet Brains', 'Kai', serif;
-    --code-font: 'Jet Brains', 'Kai', monospace;
+    --body-font: "Sans";
+    --head-font: "Sans";
+    --code-font: 'Jet Brains', 'Song', monospace;
+}
+/* 放大字体，便于阅读 */
+html {
+    font-size: 18px !important;
+}
+#write {
+    max-width: 60% !important;
 }
 /* 代码块夜间模式 */
 .cm-s-inner .cm-keyword {
